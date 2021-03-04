@@ -1,0 +1,206 @@
+/*=== Import Fonts ===*/
+@include font-face($font-primary-regular, $font-primary-regular-path);
+@include font-face($font-primary-semi-bold, $font-primary-semi-bold-path);
+@include font-face($font-primary-light, $font-primary-light-path);
+
+/*=== Typography Styling ===*/
+body {
+}
+a {
+	&:link {
+		text-decoration: none;
+	}
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover {
+		text-decoration: none;
+	}
+	&:active {
+		text-decoration: none;
+	}
+}
+
+h1 {
+	font-family: $font-primary-regular;
+	font-size: 53px;
+	line-height: 1.32;
+	color: #6d6d6d;
+}
+h1.bigTitle {
+	font-family: $font-primary-semi-bold;
+	font-size: 115px;
+	font-weight: 600;
+	line-height: 1.33;
+	color: #107dac;
+}
+h2 {
+	font-family: $font-primary-semi-bold;
+	font-size: 52px;
+	font-weight: 600;
+	line-height: 1.33;
+	letter-spacing: 2.7px;
+	text-align: left;
+}
+h3 {
+	font-family: $font-primary-semi-bold;
+	font-size: 37px;
+	font-weight: bold;
+	line-height: 1.32;
+}
+.homeSectiontitle {
+	font-family: $font-primary-semi-bold;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: left;
+	color: #107dac;
+}
+Footer.title {
+	font-family: $font-primary-semi-bold;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+	color: #96999c;
+}
+.filter {
+	font-family: $font-primary-semi-bold;
+	font-size: 24px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: left;
+	color: #6d6d6d;
+}
+p {
+	font-family: $font-primary-semi-bold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.35;
+	text-align: left;
+	color: #107dac;
+}
+.SideBar.selecteed {
+	font-family: $font-primary-semi-bold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.35;
+	text-align: left;
+	color: #ffffff;
+}
+.SideBar {
+	font-family: $font-primary-semi-bold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.35;
+	text-align: left;
+	color: #6d6d6d;
+}
+.article.Title {
+	font-family: $font-primary-semi-bold;
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.35;
+	color: #6d6d6d;
+}
+Footer.link {
+	font-family: $font-primary-regular;
+	font-size: 20px;
+	line-height: 1.35;
+	color: #6d6d6d;
+}
+
+h4 {
+	font-family: $font-primary-semi-bold;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 1.33;
+	text-align: left;
+	color: #ffffff;
+}
+h5 {
+	font-family: $font-primary-regular;
+	font-size: 18px;
+	line-height: 1.33;
+	text-align: left;
+	color: #414042;
+}
+.label-2 {
+	font-family: $font-primary-semi-bold;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 1.31;
+	color: #6d6d6d;
+}
+.navBar {
+	font-family: $font-primary-semi-bold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.31;
+	text-align: left;
+	color: #474747;
+}
+button {
+	font-family: $font-primary-semi-bold;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 1.31;
+	color: #ffffff;
+}
+
+label {
+	font-family: $font-primary-regular;
+	font-size: 16px;
+	line-height: 1.31;
+	text-align: left;
+	color: #3b3b3b;
+}
+.article.price {
+	font-family: $font-primary-regular;
+	font-size: 16px;
+	line-height: 1.31;
+	color: #5d5d5d;
+}
+p.large {
+	font-family: $font-primary-regular;
+	font-size: 14px;
+	line-height: 1.36;
+	letter-spacing: 0.98px;
+	color: #3b3b3b;
+}
+.counter.count {
+	font-family: $font-primary-semi-bold;
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 1.31;
+	color: #107dac;
+}
+placeHolder {
+	font-family: $font-primary-regular;
+	font-size: 12px;
+	line-height: 1.33;
+	text-align: left;
+	color: #96999c;
+}
+.popup {
+	font-family: $font-primary-regular;
+	font-size: 8px;
+	line-height: 1.38;
+	text-align: left;
+	color: #656565;
+}
+.counter.label {
+	font-family: $font-primary-regular;
+	font-size: 8px;
+	line-height: 1.38;
+	color: #444444;
+}
+
+// How typogrraphy should looks like on mobile version
+@include for-size(desktop-down) {
+}
+@include for-size(tablet-landscape-down) {
+}
+@include for-size(tablet-portrait-down) {
+}
+@include for-size(phone-only) {
+}
