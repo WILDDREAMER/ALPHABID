@@ -56,7 +56,7 @@ h3 {
 	text-align: left;
 	color: #107dac;
 }
-Footer.title {
+Footer .title {
 	font-family: $font-primary-semi-bold;
 	font-size: 24px;
 	font-weight: bold;
@@ -79,7 +79,7 @@ p {
 	text-align: left;
 	color: #107dac;
 }
-.SideBar.selecteed {
+.SideBar .selecteed {
 	font-family: $font-primary-semi-bold;
 	font-size: 20px;
 	font-weight: 600;
@@ -95,7 +95,7 @@ p {
 	text-align: left;
 	color: #6d6d6d;
 }
-.article.Title {
+.article .Title {
 	font-family: $font-primary-semi-bold;
 	font-size: 20px;
 	font-weight: 600;
@@ -144,7 +144,7 @@ button {
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 1.31;
-	color: #ffffff;
+	
 }
 
 label {
@@ -154,20 +154,20 @@ label {
 	text-align: left;
 	color: #3b3b3b;
 }
-.article.price {
+.article .price {
 	font-family: $font-primary-regular;
 	font-size: 16px;
 	line-height: 1.31;
 	color: #5d5d5d;
 }
-p.large {
+.large {
 	font-family: $font-primary-regular;
 	font-size: 14px;
 	line-height: 1.36;
 	letter-spacing: 0.98px;
 	color: #3b3b3b;
 }
-.counter.count {
+.counter .count {
 	font-family: $font-primary-semi-bold;
 	font-size: 13px;
 	font-weight: 600;
@@ -188,7 +188,7 @@ placeHolder {
 	text-align: left;
 	color: #656565;
 }
-.counter.label {
+.counter .label {
 	font-family: $font-primary-regular;
 	font-size: 8px;
 	line-height: 1.38;
