@@ -246,6 +246,14 @@ h1.bigTitle {
   color: #107dac;
 }
 
+.semi-title {
+  font-family: "OpenSans Regular";
+  font-size: 36px;
+  line-height: 1.33;
+  text-align: center;
+  color: #6d6d6d;
+}
+
 h2 {
   font-family: "OpenSans SemiBold";
   font-size: 52px;
@@ -262,7 +270,7 @@ h3 {
   line-height: 1.32;
 }
 
-.homeSectiontitle {
+.home section .title {
   font-family: "OpenSans SemiBold";
   font-size: 36px;
   font-weight: bold;
@@ -364,7 +372,7 @@ h5 {
   color: #474747;
 }
 
-button {
+.button {
   font-family: "OpenSans SemiBold";
   font-size: 16px;
   font-weight: 600;
@@ -424,5 +432,61 @@ placeHolder {
   font-size: 8px;
   line-height: 1.38;
   color: #444444;
+}
+
+.home {
+  background-image: url("../images/home_background.svg");
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 99px 26.1% 260px 26.1%;
+}
+
+.home .hero {
+  max-width: 1440px;
+}
+
+.home .hero .logo {
+  margin: auto;
+  width: 157px;
+  height: 139px;
+  background: url("../images/Logo.svg") center no-repeat;
+  background-size: 100%;
+  margin-bottom: 160px;
+}
+
+.home .hero .content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.home .hero .content .title {
+  font-size: 48px;
+}
+
+.home .hero .content .button {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 120px;
+  margin-top: 15px;
+}
+
+@media (max-width: 1200px) {
+  .home {
+    background: rebeccapurple;
+  }
+}
+
+@media (max-width: 992px) {
+  .home {
+    background: rebeccapurple;
+  }
+}
+
+@media (max-width: 576px) {
+  .home {
+    background: rebeccapurple;
+  }
 }
 /*# sourceMappingURL=style.css.map */

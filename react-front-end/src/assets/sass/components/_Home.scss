@@ -1,0 +1,42 @@
+.home{
+    background-image: url("../images/home_background.svg");
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 99px 26.1% 260px 26.1%;
+    .hero{
+        max-width: 1440px;
+        .logo{
+            margin: auto;
+            width: 157px;
+            height: 139px;
+            background: url("../images/Logo.svg") center no-repeat;
+            background-size: 100%;
+            margin-bottom: 160px;
+        }
+        .content{
+            // width: 100%;
+            @include flex(center, center);
+            flex-direction: column;
+            .title{
+                font-size: 48px;
+            }
+            .button{
+                @include padding-v(5px);
+                width: 120px;
+                margin-top: 15px;
+            }
+        }
+    }
+    @include for-size(desktop-down){
+        background: rebeccapurple;
+    }
+    @include for-size(tablet-landscape-down){
+        background: rebeccapurple;
+    }
+    @include for-size(tablet-portrait-dow){
+        background: rebeccapurple;
+    }
+    @include for-size(phone-only){
+        background: rebeccapurple;
+    }
+}

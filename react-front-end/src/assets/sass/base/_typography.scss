@@ -34,6 +34,13 @@ h1.bigTitle {
 	line-height: 1.33;
 	color: #107dac;
 }
+.semi-title {
+	font-family: $font-primary-regular;
+	font-size: 36px;
+	line-height: 1.33;
+	text-align: center;
+	color: #6d6d6d;
+  }
 h2 {
 	font-family: $font-primary-semi-bold;
 	font-size: 52px;
@@ -48,7 +55,7 @@ h3 {
 	font-weight: bold;
 	line-height: 1.32;
 }
-.homeSectiontitle {
+.home section .title {
 	font-family: $font-primary-semi-bold;
 	font-size: 36px;
 	font-weight: bold;
@@ -139,7 +146,7 @@ h5 {
 	text-align: left;
 	color: #474747;
 }
-button {
+.button {
 	font-family: $font-primary-semi-bold;
 	font-size: 16px;
 	font-weight: 600;
