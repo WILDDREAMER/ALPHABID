@@ -1,42 +1,93 @@
 .home{
-    background-image: url("../images/home_background.svg");
-    background-attachment: fixed;
-    background-size: cover;
-    padding: 99px 26.1% 260px 26.1%;
     .hero{
-        max-width: 1440px;
-        .logo{
-            margin: auto;
-            width: 157px;
-            height: 139px;
-            background: url("../images/Logo.svg") center no-repeat;
-            background-size: 100%;
-            margin-bottom: 160px;
-        }
-        .content{
-            // width: 100%;
-            @include flex(center, center);
-            flex-direction: column;
-            .title{
-                font-size: 48px;
+        background-image: url("../images/home_background.svg");
+        background-attachment: fixed;
+        background-size: cover;
+        .container{
+            padding-top: 99px;
+            padding-bottom:260px;
+            max-width: 1440px;
+            .logo{
+                margin: auto;
+                width: 157px;
+                height: 139px;
+                background: url("../images/Logo.svg") center no-repeat;
+                background-size: 100%;
+                margin-bottom: 160px;
             }
-            .button{
-                @include padding-v(5px);
-                width: 120px;
-                margin-top: 15px;
+            .content{
+                @include flex(center, center);
+                flex-direction: column;
+                .title{
+                    font-size: 48px;
+                    max-width: 600px;
+                }
+                .semi-title{
+                    max-width: 620px;
+                }
+                .button{
+                    @include padding-v(5px);
+                    width: 120px;
+                    margin-top: 15px;
+                }
             }
         }
     }
     @include for-size(desktop-down){
-        background: rebeccapurple;
+        .hero{
+            .container{
+                .content{
+                    .title{
+                        font-size: 38px;
+                    }
+                    .semi-title{
+                        font-size: 28px;
+                    }
+                    .btn{
+                        width: 100px;
+                    }
+                }
+            }
+        }
     }
     @include for-size(tablet-landscape-down){
-        background: rebeccapurple;
-    }
-    @include for-size(tablet-portrait-dow){
-        background: rebeccapurple;
+        .hero{
+            .container{
+                .content{
+                    .title{
+                        font-size: 32px;
+                    }
+                    .semi-title{
+                        font-size: 24px;
+                    }
+                }
+            }
+        }
     }
     @include for-size(phone-only){
-        background: rebeccapurple;
+        .hero{
+            .container{
+                .logo{
+                    margin: auto;
+                    width: 157px;
+                    height: 139px;
+                    background: url("../images/Logo.svg") center no-repeat;
+                    background-size: 100%;
+                    margin-bottom: 90px;
+                }
+                .content{
+                    .title{
+                        font-size: 19px;
+                    }
+                    .semi-title{
+                        font-size: 14px;
+                    }
+                    .button{
+                        width: 80px;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
     }
 }
