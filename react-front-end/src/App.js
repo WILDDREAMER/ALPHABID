@@ -1,6 +1,6 @@
 import React from 'react'
-import './assets/css/style.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/style.css'
 import {
   BrowserRouter as Router,
   Switch,
@@ -8,7 +8,6 @@ import {
 } from "react-router-dom";
 
 import Home from './components/home/'
-import Product from './components/product';
 import Counter from './components/counter';
 
 function App() {
@@ -20,7 +19,7 @@ function App() {
           <Home></Home>
         </Route>
         <Route exact path='/product'>
-          <Product title='SONOS' price='102.56'></Product>
+          <></>
         </Route>
         <Route exact path='/countdown'>
           <Counter></Counter>

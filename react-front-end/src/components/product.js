@@ -8,7 +8,7 @@ export default function Product(props) {
                 <div className="wish icon"></div>
                 <div className="search icon"></div>
             </div>
-            <img src={props.img} alt=""/>
+            <div className='imgContainer'><img src={props.img} alt=""/></div>
             <Counter></Counter>
             <div className='infos'>
                 <div className="title">{props.title}</div>

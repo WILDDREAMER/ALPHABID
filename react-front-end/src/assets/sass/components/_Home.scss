@@ -1,5 +1,8 @@
 .home{
+    @include flex(center,center);
+    flex-direction: column;
     .hero{
+        width: 100%;
         background-image: url("../images/home_background.svg");
         background-attachment: fixed;
         background-size: cover;
@@ -67,6 +70,7 @@
     @include for-size(phone-only){
         .hero{
             .container{
+                padding-bottom:180px;
                 .logo{
                     margin: auto;
                     width: 157px;

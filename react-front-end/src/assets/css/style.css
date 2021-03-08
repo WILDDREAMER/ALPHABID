@@ -236,6 +236,7 @@ h1 {
   font-size: 53px;
   line-height: 1.32;
   color: #6d6d6d;
+  text-transform: uppercase;
 }
 
 h1.bigTitle {
@@ -277,6 +278,18 @@ h3 {
   line-height: 1.33;
   text-align: left;
   color: #107dac;
+}
+
+@media (max-width: 1200px) {
+  .home section .title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 576px) {
+  .home section .title {
+    font-size: 16px;
+  }
 }
 
 Footer.title {
@@ -323,12 +336,18 @@ p {
   color: #6d6d6d;
 }
 
-.product .title {
+.product .infos .title {
   font-family: "OpenSans SemiBold";
   font-size: 20px;
   font-weight: 600;
   line-height: 1.35;
   color: #6d6d6d;
+}
+
+@media (max-width: 1200px) {
+  .product .infos .title {
+    font-size: 18px;
+  }
 }
 
 Footer.link {
@@ -350,10 +369,26 @@ h4 {
 h5 {
   font-family: "OpenSans Regular";
   font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
   line-height: 1.33;
+  letter-spacing: normal;
   text-align: left;
   color: #414042;
   text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  h5 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  h5 {
+    font-size: 12px;
+  }
 }
 
 .label-2 {
@@ -389,11 +424,17 @@ label {
   color: #3b3b3b;
 }
 
-.product .price {
+.product .infos .price {
   font-family: "OpenSans Regular";
   font-size: 16px;
   line-height: 1.31;
   color: #5d5d5d;
+}
+
+@media (max-width: 1200px) {
+  .product .infos .price {
+    font-size: 16px;
+  }
 }
 
 p.large {
@@ -435,7 +476,15 @@ placeHolder {
   color: #444444;
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
 .home .hero {
+  width: 100%;
   background-image: url("../images/home_background.svg");
   background-attachment: fixed;
   background-size: cover;
@@ -501,6 +550,9 @@ placeHolder {
 }
 
 @media (max-width: 576px) {
+  .home .hero .container {
+    padding-bottom: 180px;
+  }
   .home .hero .container .logo {
     margin: auto;
     width: 157px;
@@ -537,14 +589,30 @@ placeHolder {
 }
 
 .product {
+  flex: 1;
+  background: #ffffff;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   max-width: 407px;
-  padding-top: 92px;
-  padding-bottom: 13px;
+  padding: 5.4%  3% 13px 3%;
+  gap: 6px;
+}
+
+.product .imgContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 334px;
+}
+
+.product .imgContainer img {
+  height: 100%;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
 .product .icons {
@@ -601,7 +669,137 @@ placeHolder {
   background-size: 34px;
 }
 
-.product .infos {
+.product .infos .title, .product .infos .price {
   text-align: center;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1200px) {
+  .product .imgContainer {
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .product {
+    max-width: 320px;
+  }
+  .product .img {
+    max-width: 230px;
+  }
+  .product .icons {
+    gap: 7px;
+  }
+  .product .icons .icon {
+    padding: 15px;
+  }
+}
+
+.latestProducts {
+  width: 100%;
+  padding-left: 2%;
+  padding-right: 2%;
+  background-color: #f2f2f2;
+}
+
+.latestProducts .container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.latestProducts .container h1, .latestProducts .container h5 {
+  text-align: center;
+}
+
+.latestProducts .container .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 21px;
+  padding-top: 50px;
+}
+
+@media (max-width: 992px) {
+  .latestProducts .container .products {
+    flex-direction: column;
+    gap: 30px;
+    padding-top: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .latestProducts .container .products {
+    padding-top: 30px;
+  }
+}
+
+.types {
+  height: 928px;
+  width: 100%;
+  max-width: 1600px;
+  margin-bottom: 20px;
+}
+
+.types .container {
+  height: 100%;
+  width: 100%;
+  min-height: 928px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  color: white;
+}
+
+.types .container .mobile, .types .container .gadgets {
+  height: 454px;
+  width: 40%;
+  padding-top: 6%;
+  padding-left: 2rem;
+}
+
+.types .container .laptops {
+  width: 60%;
+  height: 100%;
+  background-color: #0f7dac;
+  padding-left: 25%;
+  padding-top: 6%;
+}
+
+.types .container .mobile {
+  background-color: #1ebbd7;
+}
+
+.types .container .gadgets {
+  background-color: #005073;
+}
+
+@media (max-width: 1200px) {
+  .types {
+    max-width: 100%;
+    padding-left: 2%;
+    padding-right: 2%;
+  }
+  .types .container .laptops, .types .container .mobile, .types .container .gadgets {
+    flex: 1;
+    width: 100%;
+  }
+  .types .container .laptops {
+    padding-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .types .laptops h2, .types .mobile h2, .types .gadgets h2 {
+    font-size: 48px;
+  }
+}
+
+@media (max-width: 576px) {
+  .types .laptops h2, .types .mobile h2, .types .gadgets h2 {
+    font-size: 42px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
