@@ -1,0 +1,36 @@
+.product{
+    position: relative;
+    @include flex(center, center);
+    flex-direction: column;
+    max-width: 407px;
+    padding-top: 92px;
+    padding-bottom: 13px;
+    .icons{
+        position: absolute;
+        left: 20px;
+        top: 20px;
+        @include flex(center, center);
+        flex-direction: column;
+        gap: 9px;
+        .icon{
+            padding: 17px;
+            border-radius: 50%;
+            @include ripple-effect(white);
+        }
+        .hummer{
+            background: url("../images/hummer.png") no-repeat center;
+            background-size: 34px;
+        }
+        .wish{
+            background: url("../images/wish.png") no-repeat center;
+            background-size: 34px;
+        }
+        .search{
+            background: url("../images/search.png") no-repeat center;
+            background-size: 34px;
+        }
+    }
+    .infos{
+        text-align: center;
+    }
+}

@@ -323,7 +323,7 @@ p {
   color: #6d6d6d;
 }
 
-.article.Title {
+.product .title {
   font-family: "OpenSans SemiBold";
   font-size: 20px;
   font-weight: 600;
@@ -389,7 +389,7 @@ label {
   color: #3b3b3b;
 }
 
-.article.price {
+.product .price {
   font-family: "OpenSans Regular";
   font-size: 16px;
   line-height: 1.31;
@@ -404,7 +404,7 @@ p.large {
   color: #3b3b3b;
 }
 
-.counter.count {
+.countdown .count {
   font-family: "OpenSans SemiBold";
   font-size: 13px;
   font-weight: 600;
@@ -428,7 +428,7 @@ placeHolder {
   color: #656565;
 }
 
-.counter.label {
+.countdown .label {
   font-family: "OpenSans Regular";
   font-size: 8px;
   line-height: 1.38;
@@ -519,5 +519,89 @@ placeHolder {
     width: 80px;
     font-size: 12px;
   }
+}
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.countdown .timing {
+  text-align: center;
+  padding: 6px 3px 13px 3px;
+  border-radius: 4px;
+  border: solid #e1e1e1 1px;
+  min-width: 42px;
+}
+
+.product {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 407px;
+  padding-top: 92px;
+  padding-bottom: 13px;
+}
+
+.product .icons {
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.product .icons .icon {
+  padding: 17px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+
+.product .icons .icon::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  padding: 50%;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
+  transition: transform 700ms, opacity 700ms;
+  pointer-events: none;
+}
+
+.product .icons .icon:active::before {
+  transition: 0s;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.product .icons .hummer {
+  background: url("../images/hummer.png") no-repeat center;
+  background-size: 34px;
+}
+
+.product .icons .wish {
+  background: url("../images/wish.png") no-repeat center;
+  background-size: 34px;
+}
+
+.product .icons .search {
+  background: url("../images/search.png") no-repeat center;
+  background-size: 34px;
+}
+
+.product .infos {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
