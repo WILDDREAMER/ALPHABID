@@ -1,8 +1,8 @@
 .types{
     height: 928px;
     width: 100%;
-    max-width: 1600px;
     .container{
+        max-width: 1800px;
         height: 100%;
         width: 100%;
         min-height: 928px;
@@ -23,12 +23,25 @@
             background-color: #0f7dac;
             padding-left: 25%;
             padding-top: 6%;
+            background-image: url('../images/mac.svg');
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-x: 0;
+            background-position-y: 100%;
         }
         .mobile{
             background-color: #1ebbd7;
+            background-image: url('../images/phone-background.svg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
         }
         .gadgets{
+            background-image: url('../images/watch_tp3.svg');
             background-color: #005073;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position-y: 100%;
         }
     }
     margin-bottom: 20px;
