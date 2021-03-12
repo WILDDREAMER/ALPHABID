@@ -4,7 +4,7 @@ import backet_icon from "../../assets/Svg-Files/backet-icon.svg"
 export default function Navbar() {
     return (
         <div className="nav-cont container">  
-           <ul className="nav-list">
+           <ul id="list" className="nav-list">
             <li className="list-item"><a className="list-link navBar">HOME</a></li>  
             <li className="list-item"><a className="list-link navBar">ABOUT US</a></li>       
             <li className="list-item"><a className="list-link navBar">CONTACT</a></li>  
@@ -12,6 +12,9 @@ export default function Navbar() {
             <li className="list-item"><a className="list-link navBar">CATEGORIES</a></li>  
             
         </ul> 
+        <i onClick={()=>{
+            var navlist = document.getElementById("list");
+            navlist.classList.toggle("showlist")                    }} className="fal fa-bars burger"></i>
         <div className="buttons-ya">
             <button className="search-button ">
                 <img className="search-icon" src={search_icon}/>

@@ -21,6 +21,11 @@
             }
         }
     }
+    .burger{
+        display: none;
+        font-size: 30px;
+        color: #e2e2e2;
+    }
     .buttons-ya{
         display: flex;
         align-items: center;
@@ -77,3 +82,29 @@
     padding: 0 7%;
 
 }
+.showlist{
+    transform: translateX(0) !important;
+}
+@media screen and (max-width: 1000px) {
+    .container{
+        width: 100%;
+    }
+    .nav-cont{
+         .nav-list{
+            height: calc(100% - 80px);
+            width: 70%;
+            transform: translateX(-100%);
+            background-color: white;
+            flex-direction: column;
+            justify-content: space-evenly;
+            position: absolute;
+            top: 80px;
+            left: 0;
+            z-index: 1;
+            transition: all 300ms ;
+         }
+         .burger{
+            display: block;
+        }
+    }
+  }
