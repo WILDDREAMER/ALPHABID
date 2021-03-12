@@ -1,0 +1,17 @@
+.auctions{
+    margin-top: 38px;
+    @include flex(center,center);
+    flex-direction: column;
+    width: 100%;
+    h5{
+        margin-bottom: 50px;
+    }
+    .products{
+        @include flex(center,center);
+        flex-wrap: wrap;
+        gap: 21px;
+        .product{
+            flex: auto;
+        }
+    }
+}

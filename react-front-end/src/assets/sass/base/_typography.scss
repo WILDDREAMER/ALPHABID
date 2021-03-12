@@ -62,6 +62,7 @@ h3 {
 	line-height: 1.33;
 	text-align: left;
 	color: #107dac;
+	text-transform: uppercase;
 	@include for-size(desktop-down){
 		font-size: 28px;
 	}
@@ -118,7 +119,7 @@ p {
 		font-size: 18px;
 	}
 }
-Footer.link {
+Footer .link, .findus {
 	font-family: $font-primary-regular;
 	font-size: 20px;
 	line-height: 1.35;

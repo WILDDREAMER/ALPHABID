@@ -278,6 +278,7 @@ h3 {
   line-height: 1.33;
   text-align: left;
   color: #107dac;
+  text-transform: uppercase;
 }
 
 @media (max-width: 1200px) {
@@ -350,7 +351,7 @@ p {
   }
 }
 
-Footer.link {
+Footer .link, .findus {
   font-family: "OpenSans Regular";
   font-size: 20px;
   line-height: 1.35;
@@ -813,5 +814,156 @@ placeHolder {
   .types .laptops h2, .types .mobile h2, .types .gadgets h2 {
     font-size: 42px;
   }
+}
+
+.brands {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 44px;
+  width: 100%;
+  gap: 44px;
+}
+
+.brands .logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+  width: 100%;
+}
+
+.brands .logos .brand {
+  flex: 1;
+  padding: 25px;
+  background-color: #21334d;
+}
+
+.auctions {
+  margin-top: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.auctions h5 {
+  margin-bottom: 50px;
+}
+
+.auctions .products {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 21px;
+}
+
+.auctions .products .product {
+  flex: auto;
+}
+
+.contactUs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 62px;
+  width: 100%;
+}
+
+.contactUs .title, .contactUs h5 {
+  text-align: center;
+}
+
+.contactUs .content {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.contactUs .content .text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.contactUs .content .findUs {
+  flex: 1;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 9%;
+  padding-bottom: 5%;
+  width: 50%;
+}
+
+.contactUs .content .findUs .title, .contactUs .content .findUs .findus {
+  text-align: center;
+  max-width: 402px;
+}
+
+.contactUs .content .inTouch {
+  padding-top: 2%;
+  padding-bottom: 5%;
+  padding-left: 9%;
+  padding-right: 9%;
+  width: 50%;
+}
+
+.contactUs .content .inTouch .title {
+  margin-bottom: 76px;
+  text-align: center;
+}
+
+.contactUs .content .inTouch .inputs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 26px;
+}
+
+.contactUs .content .inTouch .inputs input, .contactUs .content .inTouch .inputs textarea {
+  border-bottom: #efefef solid 1px;
+  width: 100%;
+  padding-left: 15px;
+  padding-bottom: 9px;
+}
+
+.contactUs .content .inTouch .inputs textarea {
+  max-height: 110px;
+}
+
+.contactUs .content .inTouch .inputs .btn {
+  width: 100%;
+  background-color: #107dac;
+}
+
+.contactUs .content .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12.5px;
+}
+
+.contactUs .content .icons .icon {
+  width: 29.4px;
+  height: 29.4px;
+  border-radius: 50%;
+  background-color: #107dac;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,19 @@
+.brands{
+    @include flex(center,center);
+    flex-direction: column;
+    background-color: #f2f2f2;
+    padding: 44px;
+    width: 100%;
+    gap: 44px;
+    .logos{
+        @include flex(center,center);
+        gap: 5%;
+        width: 100%;
+        .brand{
+            flex: 1;
+            padding: 25px;
+            background-color: #21334d;
+        }
+    }
+
+}
