@@ -271,7 +271,7 @@ h3 {
   line-height: 1.32;
 }
 
-.home section .title {
+.home section .title, .title {
   font-family: "OpenSans SemiBold";
   font-size: 36px;
   font-weight: bold;
@@ -282,19 +282,19 @@ h3 {
 }
 
 @media (max-width: 1200px) {
-  .home section .title {
+  .home section .title, .title {
     font-size: 24px;
   }
 }
 
 @media (max-width: 992px) {
-  .home section .title {
+  .home section .title, .title {
     font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
-  .home section .title {
+  .home section .title, .title {
     font-size: 16px;
   }
 }
@@ -443,7 +443,7 @@ label {
   color: #3b3b3b;
 }
 
-.product .infos .price {
+.product .infos .price, .productText {
   font-family: "OpenSans Regular";
   font-size: 16px;
   line-height: 1.31;
@@ -451,7 +451,7 @@ label {
 }
 
 @media (max-width: 1200px) {
-  .product .infos .price {
+  .product .infos .price, .productText {
     font-size: 16px;
   }
 }
@@ -1023,5 +1023,114 @@ placeHolder {
   .contactUs .content .inTouch .title {
     margin-bottom: 40px;
   }
+}
+
+.detail {
+  padding-top: 64px;
+  width: 100%;
+}
+
+.detail .content {
+  border-top: 1px solid #efefef;
+  width: 100%;
+}
+
+.detail .content .title {
+  margin-bottom: 5px;
+}
+
+.detail .content .infos {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 50px;
+}
+
+.detail .content .infos .img {
+  position: relative;
+  width: 35%;
+  height: 0;
+  padding-bottom: 35%;
+  border: 1px solid #efefef;
+  background-color: #202036;
+}
+
+.detail .content .infos .text {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 16.5px;
+}
+
+.detail .content .infos .text span {
+  font-family: "OpenSans SemiBold";
+}
+
+.detail .content .infos .text .title {
+  font-size: 24px;
+  border-bottom: 1px solid #efefef;
+  width: 90%;
+  padding-bottom: 16.5px;
+}
+
+.detail .content .infos .text .textContainer :first-child {
+  margin-bottom: 7px;
+}
+
+.detail .content .infos .text .actions {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 11px;
+}
+
+.detail .content .infos .text .actions .hummer, .detail .content .infos .text .actions .like, .detail .content .infos .text .actions .search {
+  width: 34px;
+  height: 34px;
+  background-color: #107dac;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.detail .content .infos .text .actions .btn {
+  flex: 1;
+  background-color: #107dac;
+}
+
+.detail .content .infos .text .timing {
+  min-width: 93px;
+  height: 105px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.detail .content .infos .text .timing .label {
+  font-size: 18px;
+}
+
+.detail .content .infos .text .timing .count {
+  font-size: 30px;
+}
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 19px;
+  height: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 4px;
+  border: solid 1px #707070;
+}
+
+.quantity .minus, .quantity .plus {
+  cursor: pointer;
 }
 /*# sourceMappingURL=style.css.map */

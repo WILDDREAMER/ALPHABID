@@ -55,7 +55,7 @@ h3 {
 	font-weight: bold;
 	line-height: 1.32;
 }
-.home section .title {
+.home section .title, .title {
 	font-family: $font-primary-semi-bold;
 	font-size: 36px;
 	font-weight: bold;
@@ -191,7 +191,7 @@ label {
 	text-align: left;
 	color: #3b3b3b;
 }
-.product .infos .price {
+.product .infos .price, .productText {
 	font-family: $font-primary-regular;
 	font-size: 16px;
 	line-height: 1.31;

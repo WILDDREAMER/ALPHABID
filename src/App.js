@@ -9,6 +9,7 @@ import {
 
 import Home from './components/home/'
 import Counter from './components/counter';
+import Selected from './components/ProductDetail/selected';
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path='/countdown'>
           <Counter></Counter>
+        </Route>
+        <Route exact path='/selected'>
+          <Selected price="1224.03" condition="New" category="Electronics" tags="Gaming sale"></Selected>
         </Route>
       </div>
     </Switch>

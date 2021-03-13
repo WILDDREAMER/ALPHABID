@@ -1,0 +1,84 @@
+.detail{
+    padding-top: 64px;
+    width: 100%;
+    .content{
+        border-top: 1px solid #efefef;
+        width: 100%;
+        .title{
+            margin-bottom: 5px;
+        }
+        .infos{
+            width: 100%;
+            @include flex(flex-start, flex-start);
+            gap: 50px;
+            .img{
+                position: relative;
+                width: 35%;
+                height: 0;
+                padding-bottom: 35%;
+                border: 1px solid #efefef;
+                background-color: rgb(32, 32, 54);
+            }
+            .text{
+                span{
+                    font-family: $font-primary-semi-bold;
+                }
+                .title{
+                    font-size: 24px;
+                    border-bottom: 1px solid #efefef;
+                    width: 90%;
+                    padding-bottom: 16.5px;
+                }
+                @include flex(center, flex-start);
+                flex-direction: column;
+                gap: 16.5px;
+                .textContainer{
+                    :first-child{
+                        margin-bottom: 7px;
+                    }
+                }
+                .actions{
+                    width: 100%;
+                    @include flex(flex-start,center);
+                    gap: 11px;
+                    .hummer, .like, .search{
+                        width: 34px;
+                        height: 34px;
+                        background-color: $nice-blue;
+                        border-radius: 50%;
+                        cursor: pointer;
+                    }
+                    .btn{
+                        flex: 1;
+                        background-color: $nice-blue;
+                    }
+                }
+                .timing{
+                    min-width: 93px;
+                    height: 105px;
+                    padding: 0;
+                    @include flex(center,center);
+                    flex-direction: column;
+                    .label{
+                        font-size: 18px;
+                    }
+                    .count{
+                        font-size: 30px
+                    }
+                }
+            }
+        }
+    }
+}
+
+.quantity{
+    @include flex(space-between,center);
+    gap: 19px;
+    height: 41px;
+    @include padding-h(10px);
+    border-radius: 4px;
+    border: solid 1px #707070;
+    .minus ,.plus{
+        cursor: pointer;
+    }
+}
