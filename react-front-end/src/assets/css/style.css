@@ -283,7 +283,13 @@ h3 {
 
 @media (max-width: 1200px) {
   .home section .title {
-    font-size: 28px;
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 992px) {
+  .home section .title {
+    font-size: 18px;
   }
 }
 
@@ -356,6 +362,18 @@ Footer .link, .findus {
   font-size: 20px;
   line-height: 1.35;
   color: #6d6d6d;
+}
+
+@media (max-width: 1200px) {
+  Footer .link, .findus {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 992px) {
+  Footer .link, .findus {
+    font-size: 16px;
+  }
 }
 
 h4 {
@@ -460,6 +478,12 @@ placeHolder {
   line-height: 1.33;
   text-align: left;
   color: #96999c;
+}
+
+@media (max-width: 1200px) {
+  placeHolder {
+    font-size: 10px;
+  }
 }
 
 .popup {
@@ -884,7 +908,7 @@ placeHolder {
   box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
   width: 100%;
 }
 
@@ -925,7 +949,7 @@ placeHolder {
 }
 
 .contactUs .content .inTouch .title {
-  margin-bottom: 76px;
+  margin-bottom: 15%;
   text-align: center;
 }
 
@@ -945,7 +969,7 @@ placeHolder {
 }
 
 .contactUs .content .inTouch .inputs textarea {
-  max-height: 110px;
+  max-height: 80px;
 }
 
 .contactUs .content .inTouch .inputs .btn {
@@ -965,5 +989,39 @@ placeHolder {
   height: 29.4px;
   border-radius: 50%;
   background-color: #107dac;
+}
+
+@media (max-width: 1200px) {
+  .contactUs .content .inTouch input, .contactUs .content .inTouch textarea {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 992px) {
+  .contactUs .content .inTouch input, .contactUs .content .inTouch textarea {
+    font-size: 12px;
+  }
+  .contactUs .content .findUs {
+    height: 100%;
+  }
+  .contactUs .title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contactUs .content {
+    flex-direction: column;
+  }
+  .contactUs .content .findUs {
+    width: 100%;
+  }
+  .contactUs .content .inTouch {
+    width: 100%;
+    padding-top: 10%;
+  }
+  .contactUs .content .inTouch .title {
+    margin-bottom: 40px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

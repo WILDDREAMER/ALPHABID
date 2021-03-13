@@ -64,7 +64,10 @@ h3 {
 	color: #107dac;
 	text-transform: uppercase;
 	@include for-size(desktop-down){
-		font-size: 28px;
+		font-size: 24px;
+	}
+	@include for-size(tablet-landscape-down){
+		font-size: 18px;
 	}
 	@include for-size(phone-only){
 		font-size: 16px;
@@ -124,6 +127,12 @@ Footer .link, .findus {
 	font-size: 20px;
 	line-height: 1.35;
 	color: #6d6d6d;
+	@include for-size(desktop-down){
+       font-size: 18px;
+	}
+	@include for-size(tablet-landscape-down){
+		font-size: 16px;
+	}
 }
 
 h4{
@@ -211,6 +220,9 @@ placeHolder {
 	line-height: 1.33;
 	text-align: left;
 	color: #96999c;
+	@include for-size(desktop-down){
+		font-size: 10px;
+	}
 }
 .popup {
 	font-family: $font-primary-regular;

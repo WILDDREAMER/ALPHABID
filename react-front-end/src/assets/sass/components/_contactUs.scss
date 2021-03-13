@@ -9,7 +9,7 @@
     width: 100%;
     .content{
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
-        @include flex(center,center);
+        @include flex(center,stretch);
         .text{
             @include flex(center,center);
             flex-direction: column;
@@ -37,7 +37,7 @@
             @include padding-h(9%);
             width: 50%;
             .title{
-                margin-bottom: 76px;
+                margin-bottom: 15%;
                 text-align: center;
             }
             .inputs{
@@ -51,7 +51,7 @@
                     padding-bottom: 9px
                 }
                 textarea{
-                    max-height: 110px
+                    max-height: 80px
                 }
                 .btn{
                     width: 100%;
@@ -67,6 +67,45 @@
                 height: 29.4px;
                 border-radius: 50%;
                 background-color: $nice-blue;
+            }
+        }
+    }
+    @include for-size(desktop-down){
+        .content{
+            .inTouch{
+                input, textarea{
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    @include for-size(tablet-landscape-down){
+        .content{
+            .inTouch{
+                input, textarea{
+                    font-size: 12px;
+                }
+            }
+            .findUs{
+                height: 100%;
+            }
+        }
+        .title{
+            font-size: 16px;
+        }
+    }
+    @include for-size(tablet-portrait-down){
+        .content{
+            flex-direction: column;
+            .findUs{
+                width: 100%;
+            }
+            .inTouch{
+                width: 100%;
+                padding-top: 10%;
+                .title{
+                    margin-bottom: 40px;
+                }
             }
         }
     }
