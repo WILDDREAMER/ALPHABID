@@ -456,6 +456,12 @@ label {
   }
 }
 
+@media (max-width: 992px) {
+  .product .infos .price, .productText {
+    font-size: 14px;
+  }
+}
+
 p.large {
   font-family: "OpenSans Regular";
   font-size: 14px;
@@ -1031,7 +1037,10 @@ placeHolder {
 }
 
 .detail .content {
+  padding-bottom: 100px;
   border-top: 1px solid #efefef;
+  border-bottom: 1px solid #efefef;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -1053,7 +1062,8 @@ placeHolder {
   height: 0;
   padding-bottom: 35%;
   border: 1px solid #efefef;
-  background-color: #202036;
+  background: url(https://images.unsplash.com/photo-1615375834706-98afda0d534f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80) center no-repeat;
+  background-size: 100% 100%;
 }
 
 .detail .content .infos .text {
@@ -1095,6 +1105,21 @@ placeHolder {
   cursor: pointer;
 }
 
+.detail .content .infos .text .actions .hummer {
+  background: url("../images/hummer.png") center no-repeat;
+  background-size: 100%;
+}
+
+.detail .content .infos .text .actions .search {
+  background: url("../images/search.png") center no-repeat;
+  background-size: 100%;
+}
+
+.detail .content .infos .text .actions .like {
+  background: url("../images/wish.png") center no-repeat;
+  background-size: 100%;
+}
+
 .detail .content .infos .text .actions .btn {
   flex: 1;
   background-color: #107dac;
@@ -1118,6 +1143,109 @@ placeHolder {
   font-size: 30px;
 }
 
+@media (max-width: 1200px) {
+  .detail {
+    padding-top: 50px;
+  }
+  .detail .content .infos {
+    gap: 40px;
+  }
+  .detail .content .infos .text {
+    gap: 13px;
+  }
+  .detail .content .infos .text .title {
+    font-size: 20px;
+  }
+  .detail .content .infos .text .title {
+    padding-bottom: 12px;
+  }
+  .detail .content .infos .text .timing {
+    min-width: 73px;
+    height: auto;
+    padding: 10px;
+  }
+  .detail .content .infos .text .timing .label {
+    font-size: 12px;
+  }
+  .detail .content .infos .text .timing .count {
+    font-size: 20px;
+  }
+  .detail .content .infos .text .textContainer :first-child {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 992px) {
+  .detail {
+    padding-top: 50px;
+  }
+  .detail .content .infos {
+    gap: 30px;
+  }
+  .detail .content .infos .text {
+    gap: 13px;
+  }
+  .detail .content .infos .text .title {
+    font-size: 18px;
+  }
+  .detail .content .infos .text .title {
+    padding-bottom: 12px;
+  }
+  .detail .content .infos .text .timing {
+    min-width: 55px;
+    height: auto;
+    padding: 10px;
+  }
+  .detail .content .infos .text .timing .label {
+    font-size: 10px;
+  }
+  .detail .content .infos .text .timing .count {
+    font-size: 18px;
+  }
+  .detail .content .infos .text .textContainer :first-child {
+    margin-bottom: 5px;
+  }
+}
+
+@media (max-width: 768px) {
+  .detail {
+    padding-top: 40px;
+  }
+  .detail .content {
+    padding-bottom: 50px;
+  }
+  .detail .content .infos {
+    gap: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .detail .content .infos .img {
+    width: 50%;
+    padding-bottom: 50%;
+  }
+  .detail .content .infos .text {
+    width: 100%;
+  }
+  .detail .content .infos .text .title {
+    font-size: 16px;
+  }
+  .detail .content .infos .text .timing {
+    flex: 1;
+    min-width: 0px;
+  }
+  .detail .content .infos .text .timing .label {
+    font-size: 8px;
+  }
+  .detail .content .infos .text .timing .count {
+    font-size: 14px;
+  }
+  .detail .content .infos .text .actions .btn {
+    font-size: 10px;
+  }
+}
+
 .quantity {
   display: flex;
   justify-content: space-between;
@@ -1132,5 +1260,44 @@ placeHolder {
 
 .quantity .minus, .quantity .plus {
   cursor: pointer;
+}
+
+.productDetail header {
+  background: #f6f6f6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.productDetail header .logo {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: url("../images/Logo.svg") center no-repeat;
+  background-size: 100% 100%;
+}
+
+.productDetail .related {
+  padding-top: 20px;
+}
+
+.productDetail .related .title {
+  padding-bottom: 20px;
+}
+
+.productDetail .related .products {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 992px) {
+  .productDetail .related .products {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .productDetail .related .products .product {
+    width: 70%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

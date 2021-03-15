@@ -37,8 +37,10 @@ export default function Detail(props) {
                             <div className="search"></div>
                             <Button>buy now for: $9,805</Button>
                         </div>
-                        <div className="productText">Categories: <span>{props.category}</span></div>
-                        <div className="productText">Tags: <span>{props.tags}</span></div>
+                        <div className="textContainer">
+                            <div className="productText">Categories: <span>{props.category}</span></div>
+                            <div className="productText">Tags: <span>{props.tags}</span></div>
+                        </div>
                     </div>
                 </div>
             </div>

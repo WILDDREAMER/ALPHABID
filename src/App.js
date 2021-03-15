@@ -10,6 +10,7 @@ import {
 import Home from './components/home/'
 import Counter from './components/counter';
 import Selected from './components/ProductDetail/selected';
+import Detail from './components/ProductDetail/';
 
 function App() {
   return (
@@ -27,6 +28,9 @@ function App() {
         </Route>
         <Route exact path='/selected'>
           <Selected price="1224.03" condition="New" category="Electronics" tags="Gaming sale"></Selected>
+        </Route>
+        <Route exact path='/detail'>
+          <Detail></Detail>
         </Route>
       </div>
     </Switch>

@@ -2,7 +2,10 @@
     padding-top: 64px;
     width: 100%;
     .content{
+        padding-bottom: 100px;
         border-top: 1px solid #efefef;
+        border-bottom: 1px solid #efefef;
+        padding-top: 10px;
         width: 100%;
         .title{
             margin-bottom: 5px;
@@ -17,9 +20,13 @@
                 height: 0;
                 padding-bottom: 35%;
                 border: 1px solid #efefef;
-                background-color: rgb(32, 32, 54);
+                background: url(https://images.unsplash.com/photo-1615375834706-98afda0d534f?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80) center no-repeat;
+                background-size: 100% 100%;
             }
             .text{
+                @include flex(center, flex-start);
+                flex-direction: column;
+                gap: 16.5px;
                 span{
                     font-family: $font-primary-semi-bold;
                 }
@@ -29,9 +36,6 @@
                     width: 90%;
                     padding-bottom: 16.5px;
                 }
-                @include flex(center, flex-start);
-                flex-direction: column;
-                gap: 16.5px;
                 .textContainer{
                     :first-child{
                         margin-bottom: 7px;
@@ -47,6 +51,18 @@
                         background-color: $nice-blue;
                         border-radius: 50%;
                         cursor: pointer;
+                    }
+                    .hummer{
+                        background: url("../images/hummer.png") center no-repeat;
+                        background-size: 100%;
+                    }
+                    .search{
+                        background: url("../images/search.png") center no-repeat;
+                        background-size: 100%;
+                    }
+                    .like{
+                        background: url("../images/wish.png") center no-repeat;
+                        background-size: 100%;
                     }
                     .btn{
                         flex: 1;
@@ -64,6 +80,108 @@
                     }
                     .count{
                         font-size: 30px
+                    }
+                }
+            }
+        }
+    }
+    @include for-size(desktop-down){
+        padding-top: 50px;
+        .content{
+            .infos{
+                gap: 40px;
+                .text{
+                    gap: 13px;
+                    .title{
+                        font-size: 20px;
+                    }
+                    .title{
+                        padding-bottom: 12px;
+                    }
+                    .timing{
+                        min-width: 73px;
+                        height: auto;
+                        padding: 10px;
+                        .label{
+                            font-size: 12px;
+                        }
+                        .count{
+                            font-size: 20px;
+                        }
+                    }
+                    .textContainer{
+                        :first-child{
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include for-size(tablet-landscape-down){
+        padding-top: 50px;
+        .content{
+            .infos{
+                gap: 30px;
+                .text{
+                    .title{
+                        font-size: 18px;
+                    }
+                    gap: 13px;
+                    .title{
+                        padding-bottom: 12px;
+                    }
+                    .timing{
+                        min-width: 55px;
+                        height: auto;
+                        padding: 10px;
+                        .label{
+                            font-size: 10px;
+                        }
+                        .count{
+                            font-size: 18px;
+                        }
+                    }
+                    .textContainer{
+                        :first-child{
+                            margin-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @include for-size(tablet-portrait-down){
+        padding-top: 40px;
+        .content{
+            padding-bottom: 50px;
+            .infos{
+                gap: 25px;
+                .img{
+                    width: 50%;
+                    padding-bottom: 50%;
+                }
+                @include flex(center, flex-start);
+                flex-direction: column;
+                .text{
+                    width: 100%;
+                    .title{
+                        font-size: 16px;
+                    }
+                    .timing{
+                        flex: 1;
+                        min-width: 0px;
+                        .label{
+                            font-size: 8px;
+                        }
+                        .count{
+                            font-size: 14px
+                        }
+                    }
+                    .actions{
+                        .btn{
+                            font-size: 10px;
+                        }
                     }
                 }
             }

@@ -1,0 +1,33 @@
+.productDetail{
+    header{
+        background: #f6f6f6;
+        @include padding-v(10px);
+        .logo{
+            @include padding-v(50px);
+            background: url("../images/Logo.svg") center no-repeat;
+            background-size: 100% 100%;
+        }
+    }
+    .related{
+        padding-top: 20px;
+        .title{
+            padding-bottom: 20px
+        }
+        .products{
+            @include flex(flex-start,center);
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+    }
+    @include for-size(tablet-landscape-down){
+        .related{
+            .products{
+                flex-direction: column;
+                gap: 20px;
+                .product{
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

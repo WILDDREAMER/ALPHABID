@@ -199,6 +199,9 @@ label {
 	@include for-size(desktop-down){
 		font-size: 16px;
 	}
+	@include for-size(tablet-landscape-down){
+		font-size: 14px;
+	}
 }
 p.large {
 	font-family: $font-primary-regular;
