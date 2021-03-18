@@ -1,7 +1,7 @@
 import Button from 'react-bootstrap/Button';
 export default function ContactUs(params) {
     return (
-        <section className='contactUs container'>
+        <section id="contact" className='contactUs container'>
             <div>
                 <div className="title">For your assistance, contact us</div>
                 <h5>we are available 24/7 feel free to contact us</h5>
